@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-    <section class="tabela-jogos">
-        <div class="col-md-12 p-3 bg-dark">
+    <section class="tabela-jogos bg-dark">
+        <div class="col-md-12 p-3">
             <div class="row">
-                <div class="col-md-3 card text-white bg-light mb-3 border-right border-light">
+                <div class="col-md-2 card text-white bg-light mb-3 border-right border-light">
                     <a href=""><div class="card-header">Time</div></a>
                     <a href=""><div class="card-body">Time</div></a>
                 </div>
@@ -31,9 +31,8 @@
             </div>
             <br><br>
 
-
             <div class="row">
-                <div class="col-md-3 card text-white bg-light mb-3 border-right border-light">
+                <div class="col-md-2 card text-white bg-light mb-3 border-right border-light">
                     <a href=""><div class="card-header">Time</div></a>
                     <a href=""><div class="card-body">Time</div></a>
                 </div>
