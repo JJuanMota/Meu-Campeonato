@@ -1,0 +1,13 @@
+.tabela-jogos {
+    padding: 30px;
+}
+.bracket {
+    height: calc(50% + 28px + 1px);
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    height: calc(50% + 1px);
+    top: 25%;
+    border: 1px solid #8fa3b0;
+    border-left: 0;
+}
