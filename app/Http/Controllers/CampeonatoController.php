@@ -45,7 +45,12 @@ class CampeonatoController extends Controller
 
     public function geraCampeonato(Request $request)
     {
-
-        return false;
+        $campeonato = Campeonato::where('id',$request->id)->first()->toArray();
+        $times = [];
+        for($i=1;$i <= 8;$i++) {
+            array_push($times,$campeonato['time_'.$i]);
+        }
+        shuffle($times);
+        return json_encode($times);
     }
 }
