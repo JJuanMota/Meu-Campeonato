@@ -3,7 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+        <h3>Bem vindo ao Meu Campeonato</h3><br>
         <div class="col-md-8">
+            <h5 class="text-secondary text-center">Para dar inicio  a simulação, Faça seu login ou crie sua conta</h5>
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
@@ -56,6 +58,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
+                                <a type="button" href="{{url('/register')}}" class="btn btn-primary">
+                                    Registrar
+                                </a>
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
