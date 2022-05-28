@@ -2,7 +2,7 @@
 @section('content')
     <section class="select-camp">
         <div class="container">
-            <h2 class="text-center">Simular Campeonatos</h2>
+            <h2 class="text-center">Listar Campeonatos</h2>
             <div class="row mt-4">
                 <select id="campeonato" name="campeonato" class="form-control form-control-sm">
                     <option>Selecione um Campeonato</option>

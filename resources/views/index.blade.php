@@ -27,17 +27,17 @@
 
     <div class="final row">
         <div class="col-md-3 ml-md-auto"></div>
-        <div class="col-md-3 ml-md-auto card text-white bg-light mb-3 border-right">
-            <a href=""><div class="card-header">${response[0]}</div></a>
-            <a href=""><div class="card-body">${response[0]}</div></a>
+        <div class="col-md-3 ml-md-auto card text-white">
+            <a href=""><div class="bg-light p-2">${response[0]}</div></a>
+            <a href=""><div class="bg-light p-2">${response[0]}</div></a>
         </div>
     </div>
 
 
     <div class="semi row">
-        <div class="col-md-3 ml-md-auto card text-white bg-light mb-3" style="max-width: 18rem;">
-            <a href=""><div class="card-header">${response[0]}</div></a>
-            <a href=""><div class="card-body">${response[0]}</div></a>
+        <div class="col-md-3 ml-md-auto card text-white" style="max-width: 18rem;">
+            <a href=""><div class="bg-light p-2">${response[0]}</div></a>
+            <a href=""><div class="bg-light p-2">${response[0]}</div></a>
         </div>
         <div class="col-md-3 ml-md-auto"></div>
     </div>
@@ -65,48 +65,39 @@
                     <div class="container">
                         <div class="col-md-12 p-3">
                             <div class="row">
-                                <div class="col-md-3 card bg-light mb-3 border-right">
-                                    <div class="card-header" id="card-1"><span class="" id="time-1">${response[0]}</span><span>     -     </span><span class="" id="placar-1">${randomPlacar()}</span></div>
-                                    <div class="card-body" id="card-2"><span class="" id="time-2">${response[1]}</span><span>     -     </span><span class="" id="placar-2">${randomPlacar()}</span></div>
+                                <div class="col-md-3">
+                                    <div class="bg-light p-2" id="card-1"><span class="" id="time-1">${response[0]}</span><span>     -     </span><span class="" id="placar-1">${randomPlacar()}</span></div>
+                                    <div class="bg-light p-2" id="card-2"><span class="" id="time-2">${response[1]}</span><span>     -     </span><span class="" id="placar-2">${randomPlacar()}</span></div>
                                 </div>
-                            </div>
-                                    <div class="row">
-                                        <div id="semi1" class="col-md-3 ml-md-auto card bg-light mb-3" style="max-width: 18rem;">
-                                        </div>
-                                        <div class="col-md-3 ml-md-auto"></div>
-                                    </div>
-                            <div class="row">
-                                <div class="col-auto col-md-3 mr-auto card bg-light mb-3" style="max-width: 18rem;">
-                                    <div class="card-header" id="card-3"><span class="" id="time-3">${response[2]}</span><span>     -     </span><span class="" id="placar-3">${randomPlacar()}</span></div>
-                                    <div class="card-body" id="card-4"><span class="" id="time-4">${response[3]}</span><span>     -     </span><span class="" id="placar-4">${randomPlacar()}</span></div>
+                                <div class="row col-md-9 ml-md-auto" style="margin-bottom: -10%; margin-top: 5%;">
+                                    <div id="semi1" class="col-md-4 " style="max-width: 18rem;"></div>
+                                    <div id="terceiro-lugar" class="col-md-4" style="margin-top: 15%; margin-bottom: -30%;"></div>
+                                    <div id="final" class="col-md-4 " style="margin-top: 15%; margin-bottom: -30%;"></div>
                                 </div>
-                            </div>
-                            <divclass="row">
-                                <div class="col-md-3 ml-md-auto"></div>
-                                <div id="final" class="col-md-3 ml-md-auto card bg-light mb-3 border-right">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 ml-md-auto"></div>
-                                <div id="terceiro-lugar" class="col-md-3 ml-md-auto card bg-light mb-3 border-right">
-                                </div>
-                            </div>
 
+                            </div>
+                            <br><br>
                             <div class="row">
-                                <div class="col-md-3 card bg-light mb-3 border-right">
-                                    <div class="card-header" id="card-5"><span class="" id="time-5">${response[4]}</span><span>     -     </span><span class="" id="placar-5">${randomPlacar()}</span></div>
-                                    <div class="card-body" id="card-6"><span class="" id="time-6">${response[5]}</span><span>     -     </span><span class="" id="placar-6">${randomPlacar()}</span></div>
+                                <div class="col-auto col-md-3 mr-auto" style="max-width: 18rem;">
+                                    <div class="bg-light p-2" id="card-3"><span class="" id="time-3">${response[2]}</span><span>     -     </span><span class="" id="placar-3">${randomPlacar()}</span></div>
+                                    <div class="bg-light p-2" id="card-4"><span class="" id="time-4">${response[3]}</span><span>     -     </span><span class="" id="placar-4">${randomPlacar()}</span></div>
                                 </div>
                             </div>
-                                <div class="row">
-                                    <div id="semi2" class="col-md-3 ml-md-auto card bg-light mb-3" style="max-width: 18rem;">
-                                    </div>
-                                    <div class="col-md-3 ml-md-auto"></div>
-                                </div>
+                            <br><br>
                             <div class="row">
-                                <div class="col-auto col-md-3 mr-auto card bg-light mb-3" style="max-width: 18rem;">
-                                    <div class="card-header" id="card-7"><span class="" id="time-7">${response[6]}</span><span>     -     </span><span class="" id="placar-7">${randomPlacar()}</span></div>
-                                    <div class="card-body" id="card-8"><span class="" id="time-8">${response[7]}</span><span>     -     </span><span class="" id="placar-8">${randomPlacar()}</span></div>
+                                <div class="col-md-3">
+                                    <div class="bg-light p-2" id="card-5"><span class="" id="time-5">${response[4]}</span><span>     -     </span><span class="" id="placar-5">${randomPlacar()}</span></div>
+                                    <div class="bg-light p-2" id="card-6"><span class="" id="time-6">${response[5]}</span><span>     -     </span><span class="" id="placar-6">${randomPlacar()}</span></div>
+                                </div>
+                                    <div class="row col-md-9 ml-md-auto" style="margin-bottom: -10%; margin-top: 5%;">
+                                        <div id="semi2" class="col-md-4"></div>
+                                    </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-auto col-md-3 mr-auto" style="max-width: 18rem;">
+                                    <div class="bg-light p-2" id="card-7"><span class="" id="time-7">${response[6]}</span><span>     -     </span><span class="" id="placar-7">${randomPlacar()}</span></div>
+                                    <div class="bg-light p-2" id="card-8"><span class="" id="time-8">${response[7]}</span><span>     -     </span><span class="" id="placar-8">${randomPlacar()}</span></div>
                                 </div>
                             </div>
                         </div>
@@ -125,26 +116,32 @@
                             var semiContent = "";
                             if(parseInt(placar1) == parseInt(placar2)) {
                                 $("#card-"+i).addClass('bg-danger');
+                                $("#card-"+i).removeClass('bg-light');
                                 i -= 1;
+                                $("#card-"+i).removeClass('bg-light');
                                 $("#card-"+i).addClass('bg-success');
                                 semiContent = `
-                                            <div id="card-semi${i}" class="card-header"><span class="" id="Timesemi${i}">${time1}</span><span>     -     </span><span class="" id="placar${i}">${randomPlacar()}</span></div>
+                                            <div id="card-semi${i}" class="bg-light p-2"><span class="" id="Timesemi${i}">${time1}</span><span>     -     </span><span class="" id="placar${i}">${randomPlacar()}</span></div>
                                 `;
                             }
                             else if(parseInt(placar1) > parseInt(placar2)) {
                                 $("#card-"+i).addClass('bg-danger');
+                                $("#card-"+i).removeClass('bg-light');
                                 i -= 1;
+                                $("#card-"+i).removeClass('bg-light');
                                 $("#card-"+i).addClass('bg-success');
                                 semiContent = `
-                                            <div id="card-semi${i}" class="card-header"><span class="" id="Timesemi${i}">${time1}</span><span>     -     </span><span class="" id="placarSemi${i}">${randomPlacar()}</span></div>
+                                            <div id="card-semi${i}" class="bg-light p-2"><span class="" id="Timesemi${i}">${time1}</span><span>     -     </span><span class="" id="placarSemi${i}">${randomPlacar()}</span></div>
 
                                 `;
                             } else {
                                 $("#card-"+i).addClass('bg-success');
+                                $("#card-"+i).removeClass('bg-light');
                                 i -= 1;
+                                $("#card-"+i).removeClass('bg-light');
                                 $("#card-"+i).addClass('bg-danger');
                                 semiContent = `
-                                            <div id="card-semi${i}" class="card-header"><span class="" id="Timesemi${i}">${time2}</span><span>     -     </span><span class="" id="placarSemi${i}">${randomPlacar()}</span></div>
+                                            <div id="card-semi${i}" class="bg-light p-2"><span class="" id="Timesemi${i}">${time2}</span><span>     -     </span><span class="" id="placarSemi${i}">${randomPlacar()}</span></div>
 
                                 `;
                             }
@@ -165,37 +162,43 @@
                                 var terceiroContent = "";
                                 if(parseInt(placarSemi1) == parseInt(placarSemi2)) {
                                     $("#card-semi"+i).addClass('bg-danger');
+                                    $("#card-semi"+i).removeClass('bg-light');
                                     i -= 2;
+                                    $("#card-semi"+i).removeClass('bg-light');
                                     $("#card-semi"+i).addClass('bg-success');
                                     finalContent = `
-                                            <div class="card-header" id="card-final${i}"><span class="" id="Timefinal${i}">${timeSemi1}</span><span>     -     </span><span class="" id="Finalplacar${i}">${randomPlacar()}</span></div>
+                                            <div class="bg-light p-2" id="card-final${i}"><span class="" id="Timefinal${i}">${timeSemi1}</span><span>     -     </span><span class="" id="Finalplacar${i}">${randomPlacar()}</span><span id="vencedor${i}"></span></div>
                                     `;
                                     terceiroContent = `
-                                            <div class="card-header" id="card-terceiro${i}"><span class="" id="Timeterceiro${i}">${timeSemi2}</span><span>     -     </span><span class="" id="Terceiroplacar${i}">${randomPlacar()}</span></div>
+                                            <div class="bg-light p-2" id="card-terceiro${i}"><span class="" id="Timeterceiro${i}">${timeSemi2}</span><span>     -     </span><span class="" id="Terceiroplacar${i}">${randomPlacar()}</span><span id="terceiro${i}"></span></div>
                                     `;
                                 }
                                 else if(parseInt(placarSemi1) > parseInt(placarSemi2)) {
                                     $("#card-semi"+i).addClass('bg-danger');
+                                    $("#card-semi"+i).removeClass('bg-light');
                                     i -= 2;
+                                    $("#card-semi"+i).removeClass('bg-light');
                                     $("#card-semi"+i).addClass('bg-success');
                                     finalContent = `
-                                            <div class="card-header" id="card-final${i}"><span class="" id="Timefinal${i}">${timeSemi1}</span><span>     -     </span><span class="" id="Finalplacar${i}">${randomPlacar()}</span></div>
+                                            <div class="bg-light p-2" id="card-final${i}"><span class="" id="Timefinal${i}">${timeSemi1}</span><span>     -     </span><span class="" id="Finalplacar${i}">${randomPlacar()}</span><span id="vencedor${i}"></span></div>
 
                                     `;
                                     terceiroContent = `
-                                            <div class="card-header" id="card-terceiro${i}"><span class="" id="Timeterceiro${i}">${timeSemi2}</span><span>     -     </span><span class="" id="Terceiroplacar${i}">${randomPlacar()}</span></div>
+                                            <div class="bg-light p-2" id="card-terceiro${i}"><span class="" id="Timeterceiro${i}">${timeSemi2}</span><span>     -     </span><span class="" id="Terceiroplacar${i}">${randomPlacar()}</span><span id="terceiro${i}"></span></div>
 
                                     `;
                                 } else {
                                     $("#card-semi"+i).addClass('bg-success');
+                                    $("#card-semi"+i).removeClass('bg-light');
                                     i -= 2;
+                                    $("#card-semi"+i).removeClass('bg-light');
                                     $("#card-semi"+i).addClass('bg-danger');
                                     finalContent = `
-                                            <div class="card-header" id="card-final${i}"><span class="" id="Timefinal${i}">${timeSemi2}</span><span>     -     </span><span class="" id="Finalplacar${i}">${randomPlacar()}</span></div>
+                                            <div class="bg-light p-2" id="card-final${i}"><span class="" id="Timefinal${i}">${timeSemi2}</span><span>     -     </span><span class="" id="Finalplacar${i}">${randomPlacar()}</span><span id="vencedor${i}"></span></div>
 
                                     `;
                                     terceiroContent = `
-                                            <div class="card-header" id="card-terceiro${i}"><span class="" id="Timeterceiro${i}">${timeSemi1}</span><span>     -     </span><span class="" id="Terceiroplacar${i}">${randomPlacar()}</span></div>
+                                            <div class="bg-light p-2" id="card-terceiro${i}"><span class="" id="Timeterceiro${i}">${timeSemi1}</span><span>     -     </span><span class="" id="Terceiroplacar${i}">${randomPlacar()}</span><span id="terceiro${i}"></span></div>
 
                                     `;
                                 }
@@ -206,16 +209,36 @@
                             // TABELA PARA RESULTADO DAS FINAIS
                             let Finalplacar1 = $("#Finalplacar1").html();
                             let Finalplacar5 = $("#Finalplacar5").html();
-                            if(parseInt(Finalplacar1) > parseInt(Finalplacar5)) {
+                            if(parseInt(Finalplacar1) == parseInt(Finalplacar5)) {
                                 var primeiro = $("#Timefinal1").html();
                                 var segundo = $("#Timefinal5").html();
                                 $("#card-final1").addClass('bg-warning');
+                                $("#card-final1").removeClass('bg-light');
+                                $("#card-final5").removeClass('bg-light');
                                 $("#card-final5").addClass('bg-secondary');
+
+                                $("#vencedor1").html(' - VENCEDOR');
+                                $("#vencedor5").html(' - 2º LUGAR');
+                            }
+                            else if(parseInt(Finalplacar1) > parseInt(Finalplacar5)) {
+                                var primeiro = $("#Timefinal1").html();
+                                var segundo = $("#Timefinal5").html();
+                                $("#card-final1").addClass('bg-warning');
+                                $("#card-final1").removeClass('bg-light');
+                                $("#card-final5").removeClass('bg-light');
+                                $("#card-final5").addClass('bg-secondary');
+
+                                $("#vencedor1").html(' - VENCEDOR');
+                                $("#vencedor5").html(' - 2º LUGAR');
                             } else {
                                 primeiro = $("#Timefinal5").html();
                                 segundo = $("#Timefinal1").html();
                                 $("#card-final5").addClass('bg-warning');
+                                $("#card-final5").removeClass('bg-light');
+                                $("#card-final1").removeClass('bg-light');
                                 $("#card-final1").addClass('bg-secondary');
+                                $("#vencedor5").html(' - VENCEDOR');
+                                $("#vencedor1").html(' - 2º LUGAR');
                             }
 
                             let Terceiroplacar1 = $("#Terceiroplacar1").html();
@@ -223,11 +246,17 @@
                             if(parseInt(Terceiroplacar1) > parseInt(Terceiroplacar5)) {
                                 var terceiro = $("#Timeterceiro1").html();
                                 $("#card-terceiro1").css("background-color", "#cd7f32");
+                                $("#card-terceiro1").removeClass('bg-light');
+                                $("#card-terceiro5").removeClass('bg-light');
                                 $("#card-terceiro5").addClass('bg-danger');
+                                $("#terceiro1").html(' - 3º LUGAR');
                             } else {
                                 terceiro = $("#Timeterceiro5").html();
                                 $("#card-terceiro5").css("background-color", "#cd7f32");
+                                $("#card-terceiro1").removeClass('bg-light');
+                                $("#card-terceiro5").removeClass('bg-light');
                                 $("#card-terceiro1").addClass('bg-danger');
+                                $("#terceiro5").html(' - 3º LUGAR');
                             }
                             $.ajax({
                                 url: "{{route('salvaCampeonato')}}",
