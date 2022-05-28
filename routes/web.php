@@ -29,4 +29,3 @@ Route::post('/salvaCampeonato', [App\Http\Controllers\CampeonatoController::clas
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
