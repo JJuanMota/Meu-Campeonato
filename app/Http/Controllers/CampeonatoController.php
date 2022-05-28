@@ -18,6 +18,21 @@ class CampeonatoController extends Controller
         return view('novoCampeonato');
     }
 
+    public function listarBlade()
+    {
+        $campeonatos = Campeonato::where('user_id',Auth::user()->id)->get();
+        return view('listar',[
+            'campeonatos' => $campeonatos
+        ]);
+    }
+
+    public function listaCampeonatos(Request $request)
+    {
+        $campeonato = Campeonato::find($request->id);
+
+        return json_encode($campeonato);
+    }
+
     public function createCampeonato(Request $request)
     {
         $campeonato = new Campeonato();
@@ -45,12 +60,22 @@ class CampeonatoController extends Controller
 
     public function geraCampeonato(Request $request)
     {
-        $campeonato = Campeonato::where('id',$request->id)->first()->toArray();
+        $campeonato = Campeonato::find($request->id);
         $times = [];
         for($i=1;$i <= 8;$i++) {
             array_push($times,$campeonato['time_'.$i]);
         }
         shuffle($times);
         return json_encode($times);
+    }
+
+    public function salvaCampeonato(Request $request)
+    {
+        $campeonato = Campeonato::find($request->id);
+        $campeonato['vencedor'] = $request->primeiro;
+        $campeonato['segundo_lugar'] = $request->segundo;
+        $campeonato['terceiro_lugar'] = $request->terceiro;
+        $campeonato->save();
+        return true;
     }
 }
