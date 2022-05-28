@@ -20,8 +20,11 @@ Route::get('/', function () {
 
 Route::get('/simula', [App\Http\Controllers\CampeonatoController::class, 'simulaCampeonato'])->name('simulaCampeonato');
 Route::get('/novo', [App\Http\Controllers\CampeonatoController::class, 'novoCampeonato'])->name('novoCampeonato');
+Route::get('/listar', [App\Http\Controllers\CampeonatoController::class, 'listarBlade'])->name('listarBlade');
+Route::post('/listaCampeonatos', [App\Http\Controllers\CampeonatoController::class, 'listaCampeonatos'])->name('listaCampeonatos');
 Route::post('/createCamp', [App\Http\Controllers\CampeonatoController::class, 'createCampeonato'])->name('createCamp');
 Route::post('/geraCampeonato', [App\Http\Controllers\CampeonatoController::class, 'geraCampeonato'])->name('geraCampeonato');
+Route::post('/salvaCampeonato', [App\Http\Controllers\CampeonatoController::class, 'salvaCampeonato'])->name('salvaCampeonato');
 
 
 Auth::routes();
