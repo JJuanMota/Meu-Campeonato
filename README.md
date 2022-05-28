@@ -29,3 +29,4 @@ DB_PASSWORD=
 php artisan migrate
 php artisan key:generate
 ```
+Após a execução destes comando, o projeto já poderá ser iniciado.
