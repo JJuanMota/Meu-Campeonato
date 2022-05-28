@@ -26,8 +26,8 @@ return new class extends Migration
             $table->string('time_8');
             $table->string('user_id')->nullable();
             $table->string('vencedor')->nullable();
-            $table->string('2_lugar')->nullable();
-            $table->string('3_lugar')->nullable();
+            $table->string('segundo_lugar')->nullable();
+            $table->string('terceiro_lugar')->nullable();
             $table->timestamps();
         });
     }
