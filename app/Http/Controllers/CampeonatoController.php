@@ -13,6 +13,10 @@ class CampeonatoController extends Controller
         $this->middleware('auth');
     }
 
+    public function index()
+    {
+        return view('index');
+    }
     public function novoCampeonato()
     {
         return view('novoCampeonato');

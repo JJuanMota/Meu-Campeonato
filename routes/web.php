@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-
+Route::get('/', [App\Http\Controllers\CampeonatoController::class, 'index'])->name('index');
 Route::get('/simula', [App\Http\Controllers\CampeonatoController::class, 'simulaCampeonato'])->name('simulaCampeonato');
 Route::get('/novo', [App\Http\Controllers\CampeonatoController::class, 'novoCampeonato'])->name('novoCampeonato');
 Route::get('/listar', [App\Http\Controllers\CampeonatoController::class, 'listarBlade'])->name('listarBlade');
