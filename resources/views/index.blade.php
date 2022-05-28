@@ -6,9 +6,11 @@
             <div class="row mt-4">
                 <select id="campeonato" name="campeonato" class="form-control form-control-sm">
                     <option>Selecione um Campeonato</option>
-                    @foreach($campeonatos as $camp)
-                        <option value="{{$camp->id}}">{{$camp->nome}}</option>
-                    @endforeach
+                    @if(!empty($campeonatos))
+                        @foreach($campeonatos as $camp)
+                            <option value="{{$camp->id}}">{{$camp->nome}}</option>
+                        @endforeach
+                    @endif
                 </select>
             </div>
         </div>
